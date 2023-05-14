@@ -1,5 +1,34 @@
 main {
-  text-align: center;
-  vertical-align: center;
-  line-height: 100vh
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  
+  align-items:center;
+}
+.images{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  gap:5rem;
+    /* justify-content:center; */
+}
+.images >img{
+  width:200px;
+  height:200px;
+  object-fit:cover;
+  border:5px solid gray;
+}
+.pagination{
+  margin-top:5rem;
+  display:flex;
+  gap:5px;
+}
+.pagination >div{
+  display:flex;
+  border:2px solid black;
+  padding:10px;
+  cursor:pointer;
+}
+.active{
+  background-color:gray;
+  color:black;
 }
